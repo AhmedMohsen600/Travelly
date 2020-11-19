@@ -210,7 +210,7 @@ p {
 
 #contact {
   min-height: 100vh;
-  background: url("/images/contact-mountain.png"),
+  background: url("./images/contact-mountain.png"),
     linear-gradient(rgba(0, 0, 0, 0.5), transparent);
   background-repeat: no-repeat;
   background-size: cover;
