@@ -1,0 +1,359 @@
+/* globla style */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+
+h1 {
+  font-size: 2.6rem;
+}
+li,
+button,
+label,
+input,
+p {
+  font-size: 2rem;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+h2 {
+  font-size: 4rem;
+  color: white;
+}
+h3 {
+  font-size: 2.8rem;
+  color: white;
+  font-weight: normal;
+}
+h4,
+h5 {
+  font-size: 2.8rem;
+}
+/* global style */
+
+/*---------------------- main head -------------------- */
+.main-head {
+  background: #131c27;
+  color: white;
+  position: sticky;
+  top: 0px;
+  z-index: 3;
+}
+
+nav {
+  padding: 2rem;
+  min-height: 10vh;
+  display: flex;
+  width: 90%;
+  margin: auto;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  flex: 1 1 40rem;
+  justify-content: space-around;
+}
+
+#logo {
+  flex: 2.4 1 40rem;
+  font-family: "Pattaya", sans-serif;
+}
+
+/*------------------ hero sections ------------------- */
+
+.hero {
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), transparent),
+    url("/images/landing-page.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero h3 {
+  padding: 4rem;
+  color: white;
+}
+.hero h2 {
+  color: white;
+  font-weight: bold;
+}
+
+.hero button {
+  border: none;
+  background: #131c27;
+  color: white;
+  padding: 1.8rem 5rem;
+  cursor: pointer;
+  transition: all 1s ease-in-out;
+}
+
+.hero button:hover {
+  background: white;
+  color: black;
+  font-size: 4rem;
+}
+
+/* ---------------------- location sections -----------------------  */
+
+#locations {
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+    url("/images/new-york-page.png");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+}
+.locations-head {
+  width: 90%;
+  margin: auto;
+}
+.locations-head h2 {
+  padding: 2rem 0rem;
+  color: black;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.locations-head h3 {
+  color: black;
+  padding: 2rem 0rem;
+  font-weight: normal;
+}
+.cloud {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  -webkit-user-drag: none;
+  user-select: none;
+}
+
+.moving-cloud-1 {
+  animation: cloudAnimation 4s infinite alternate ease-in-out;
+}
+.moving-cloud-2 {
+  top: 20%;
+  z-index: -1;
+  opacity: 0.5;
+  animation: cloudAnimation 4s infinite alternate ease-in-out;
+}
+
+/*--------------------- benefits sections---------------- */
+
+.benefits-head {
+  display: flex;
+  flex-direction: column;
+  background: #343c44;
+  min-height: 30vh;
+  justify-content: center;
+  text-align: center;
+}
+.benefits-head h3 {
+  padding: 1rem;
+}
+.cards {
+  display: flex;
+  align-items: center;
+  min-height: 70vh;
+  width: 90%;
+  margin: auto;
+  flex-wrap: wrap;
+}
+.cards img {
+  max-width: 15%;
+  margin: 1.5rem;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+.card {
+  min-height: 40vh;
+  text-align: center;
+  flex: 1 1 26rem;
+  margin: 2rem 5rem;
+  box-shadow: 0px 11px 11px rgb(0, 0, 0, 0.1), 0px 20px 20px rgb(0, 0, 0, 0.1);
+}
+.img-card {
+  background: whitesmoke;
+}
+.card h4,
+p {
+  padding: 1rem;
+}
+@keyframes cloudAnimation {
+  from {
+    transform: translate(7%, -7%);
+  }
+  to {
+    transform: translate(0%, 0%);
+  }
+}
+
+/*------------------- contact section ----------------------------- */
+
+#contact {
+  min-height: 100vh;
+  background: url("/images/contact-mountain.png"),
+    linear-gradient(rgba(0, 0, 0, 0.5), transparent);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form-wraper {
+  background: rgba(19, 28, 39, 0.8);
+  width: 60%;
+  color: white;
+  border-radius: 20px;
+}
+.form-head {
+  text-align: center;
+  padding: 4rem;
+}
+.name-form,
+.email-form {
+  text-align: center;
+  padding: 3rem;
+}
+.form-wraper label {
+  margin: 0rem 3rem;
+}
+.form-wraper button {
+  width: 100%;
+  margin-top: 8rem;
+  padding: 2rem;
+  border: none;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.form-wraper input {
+  padding: 1rem 3rem;
+}
+.form-wraper button:hover {
+  background: #2c3f57;
+  color: white;
+}
+/*----------------------- footer -------------------*/
+
+footer {
+  color: white;
+  background: rgba(19, 28, 39, 1);  
+}
+
+.footer-wraper {
+  display: flex;
+  padding: 2rem ;
+  width: 90%;
+  margin: auto;
+  min-height: 10vh;
+  flex-wrap: wrap;
+}
+footer ul{
+  display: flex;
+  list-style: none;
+  flex: 1 1 40rem;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+footer h5{
+  flex: 1 1 40rem;
+}
+button:focus{
+  background: #2c3f57;
+  outline: solid;
+}
+/*------------------------- responsive for mobile --------------------- */
+
+@media screen and (max-width: 1208px) {
+  nav {
+    text-align: center;
+  }
+  html {
+    font-size: 45%;
+  }
+  #logo {
+    padding: 2rem;
+  }
+  .cloud {
+    height: 40rem;
+    pointer-events: none;
+  }
+  .moving-cloud-1 {
+    z-index: -1;
+  }
+  .moving-cloud-2 {
+    z-index: -2;
+  }
+  .locations-head h3 {
+    background: rgb(19, 28, 39, 0.9);
+    color: white;
+  }
+  #locations {
+    text-align: center;
+  }
+  footer h5 {
+    text-align: center;
+    padding-bottom: 3rem;
+  }
+  .form-wraper{
+    width: 90%; 
+  }
+ 
+}
+@media screen and (max-width: 1024px) {
+  .card {
+    min-height: 15vh;
+  }
+  .card h4,
+  p {
+    padding: 1.6rem;
+  }
+  footer h5{
+    text-align: start;
+    padding-top: 4.5rem;
+  }
+  
+}
+@media screen and (max-width: 414px) {
+  .card {
+    min-height: 23vh;
+  }
+  footer h5{
+    text-align: center;
+  }
+}
+@media screen and (max-width: 420px){
+  footer h5{
+    text-align: center;
+  }
+}
+@media screen and (max-width:540px){
+  footer h5{
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px){
+  footer ul{
+    padding-top: 2.5rem;
+  }
+}
